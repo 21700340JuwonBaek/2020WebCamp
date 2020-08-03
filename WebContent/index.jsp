@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>First jsp page</title>
 </head>
 <body>
 <form action='form_ok.jsp'>
@@ -13,6 +13,11 @@
 <input type='submit' value='제출!'>
 
 </form>
-안녕하세요		첫 jsp프로젝트입니다...!
+안녕하세요		첫 jsp프로젝트입니다...!<br/>
+<% out.print("Welcome to jsp"); %><br/>
+<%= "Welcome to jsp"%><br/>
+현재시각 : <%=java.util.Calendar.getInstance().getTime() %>
+<%! int data = 50; %>
+<%= "data변수의 값은? " + data + "입니다!" %><br/>
 </body>
 </html>
