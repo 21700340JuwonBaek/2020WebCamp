@@ -16,8 +16,19 @@
 안녕하세요		첫 jsp프로젝트입니다...!<br/>
 <% out.print("Welcome to jsp"); %><br/>
 <%= "Welcome to jsp"%><br/>
-현재시각 : <%=java.util.Calendar.getInstance().getTime() %>
+현재시각 : <%=java.util.Calendar.getInstance().getTime() %><br/>
 <%! int data = 50; %>
 <%= "data변수의 값은? " + data + "입니다!" %><br/>
+
+<form action='toGoogle.jsp'>
+<input type='submit' value='구글로!'>
+</form>
+
+
+<form>
+<input type='text' name='uname' placeholder='이름!'>
+<input type="submit" value="가쟛"><br/>  
+</form>
+
 </body>
 </html>

@@ -12,5 +12,10 @@ String name = request.getParameter("msg");
 out.print("welcome"+name);
 
 %>
+
+
+<%   
+response.sendRedirect("http://www.google.com");  
+%>  
 </body>
 </html>
